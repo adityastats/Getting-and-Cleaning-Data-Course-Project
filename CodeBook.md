@@ -7,14 +7,14 @@ The dataset contained the data collected from the accelerometer from the Samsung
 1. Extracted the data set from the zipfile to a folder named "UCI HAR Dataset".
 
 2. Read all data as data tables into variables as - 
-  * __features__ variable contains the data from "features.txt", stored in 531 rows and 2 columns. The names of the 2 columns was also assigned as "Sl." and "variables".
-  * __activities__ variable has the information from "activity_labels.txt" regarding the acticity_id and names of the 6 activities (WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING), stored in 6 rows and 2 columns. The names of the columns were assigned as "activity_id" and "acitivity".
-  * __x_train__ variable stores the recorded data regarding the different features in "X_train.txt" from training set, in 7,352 rows and 561 columns. The names of the columns were assigned to be the values from the variables column in features table.
-  * __y_train__ variable stores the data regarding the acitivity_id in "y_train.txt" from training set, in 7,352 rows and 1 column. The names of the only column in this was assigned to be "activity_id".
-  * __subj_train__ variable stores the data regarding the subject_id in "subject_train.txt" from training set, in 7,352 rows and 1 column. The names of the only column in this was assigned to be "subject_id".
-  * __x_test__ variable stores the recorded data regarding the different features in "X_test.txt" from test set, in 2,947 rows and 561 columns. The names of the columns were assigned to be the values from the variables column in features table.
-  * __y_test__ variable stores the data regarding the acitivity_id in "y_test.txt" from test set, in 2,947 rows and 1 column. The names of the only column in this was assigned to be "activity_id".
-  * __subj_test__ variable stores the data regarding the subject_id in "subject_test.txt" from test set, in 2,947 rows and 1 column. The names of the only column in this was assigned to be "subject_id".
+   * __features__ variable contains the data from "features.txt", stored in 531 rows and 2 columns. The names of the 2 columns was also assigned as "Sl." and "variables".
+   * __activities__ variable has the information from "activity_labels.txt" regarding the acticity_id and names of the 6 activities (WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING), stored in 6 rows and 2 columns. The names of the columns were assigned as "activity_id" and "acitivity".
+   * __x_train__ variable stores the recorded data regarding the different features in "X_train.txt" from training set, in 7,352 rows and 561 columns. The names of the columns were assigned to be the values from the variables column in features table.
+   * __y_train__ variable stores the data regarding the acitivity_id in "y_train.txt" from training set, in 7,352 rows and 1 column. The names of the only column in this was assigned to be "activity_id".
+   * __subj_train__ variable stores the data regarding the subject_id in "subject_train.txt" from training set, in 7,352 rows and 1 column. The names of the only column in this was assigned to be "subject_id".
+   * __x_test__ variable stores the recorded data regarding the different features in "X_test.txt" from test set, in 2,947 rows and 561 columns. The names of the columns were assigned to be the values from the variables column in features table.
+   * __y_test__ variable stores the data regarding the acitivity_id in "y_test.txt" from test set, in 2,947 rows and 1 column. The names of the only column in this was assigned to be "activity_id".
+   * __subj_test__ variable stores the data regarding the subject_id in "subject_test.txt" from test set, in 2,947 rows and 1 column. The names of the only column in this was assigned to be "subject_id".
   
 3. Merging the training and testing sets into one complete data set
   * __x_merged__ variable is used to store the data after merging the x_train and x_test data variables using rbind().
