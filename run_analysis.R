@@ -75,7 +75,6 @@ names(data_named) <- gsub(pattern = "Acc", replacement = "Accelerometer",x = nam
 names(data_named) <- gsub(pattern = "Mag", replacement = "Magnitude",x = names(data_named))
 names(data_named) <- gsub(pattern = "Gyro", replacement = "Gyroscope",x = names(data_named))
 names(data_named) <- gsub(pattern = "BodyBody", replacement = "Body",x = names(data_named))
-names(data_named) <- gsub(pattern = "Acc", replacement = "Accelerometer",x = names(data_named))
 
 # -------------------------------------------------------------------------------------------------------------
 # Step-7: Creating a second, independent tidy dataset with average of each variable for each activity and each subject
