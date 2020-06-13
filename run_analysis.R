@@ -81,7 +81,7 @@ names(data_named) <- gsub(pattern = "Acc", replacement = "Accelerometer",x = nam
 # Step-7: Creating a second, independent tidy dataset with average of each variable for each activity and each subject
 # -------------------------------------------------------------------------------------------------------------
 
-tidyData <- data_named %>% group_by(activity,subject_id) %>% summarise_all(funs(mean))
+tidyData <- data_named %>% group_by(activity,subject_id) %>% summarise_all(~mean(.,na.rm = TRUE))
 
 ###Writing the newly created tidy data as a text file
 
